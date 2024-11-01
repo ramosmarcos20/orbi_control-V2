@@ -1,0 +1,81 @@
+.side-navbar {
+    background-color: #2c3e50; /* Azul oscuro */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ancho completo en móviles */
+    max-width: 250px; /* Limita el ancho en pantallas grandes */
+    height: auto; /* Deja que crezca en móviles */
+}
+.side-navbar a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.side-navbar a:hover {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+.side-navbar li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive: Sidebar en pantallas pequeñas */
+@media (max-width: 768px) {
+    .side-navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: auto;
+        z-index: 10;
+    }
+    .flex-1 {
+        margin-top: 60px; /* Deja espacio para la barra lateral en móviles */
+    }
+}
+
+/* General Layout */
+body {
+    font-family: 'Figtree', sans-serif;
+}
+.bg-gray-100 {
+    background-color: #f4f7fa;
+}
+.header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header h1 {
+    color: #2c3e50;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #3498db;
+}
+
+/* Page Content */
+main {
+    padding: 20px;
+}
+
+/* Responsive: Ajustar el contenido en pantallas pequeñas */
+@media (max-width: 768px) {
+    main {
+        padding: 10px; /* Reduce el padding en móviles */
+    }
+    .header h1 {
+        font-size: 1.5rem; /* Tamaño más pequeño para pantallas móviles */
+    }
+    .btn-primary {
+        width: 100%; /* Los botones ocupan todo el ancho en móviles */
+    }
+}
